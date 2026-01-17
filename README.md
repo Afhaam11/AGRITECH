@@ -86,5 +86,3 @@ The disease detection model demonstrates strong classification performance acros
 
 Muhammed Afhaam Ali
 
-
-1. Clone the repository  
