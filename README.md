@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# AGRITECH  
+AI-Based Rice Leaf Disease Detection and Agricultural Assistance System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+AGRITECH is an AI-driven web application designed to assist farmers and agricultural stakeholders in identifying rice leaf diseases and obtaining reliable agricultural guidance. The system combines deep learning–based image classification with an intelligent chatbot to support early disease detection and informed decision-making in rice cultivation.
 
-## Available Scripts
+The platform is developed with a modular architecture and is containerized using Docker to ensure scalability, portability, and ease of deployment.
 
-In the project directory, you can run:
+## Project Overview
 
-### `npm start`
+Rice crops are highly susceptible to leaf diseases that can significantly reduce yield if not detected early. Traditional diagnosis often requires expert intervention, which may not be readily accessible in rural regions. AGRITECH addresses this challenge by providing an automated disease detection system along with an AI-powered chatbot that delivers fact-based agricultural recommendations.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Automated rice leaf disease detection using deep learning  
+- Classification of common rice diseases such as bacterial leaf blight, rice blast, and brown spot  
+- Confidence-based predictions with disease-specific insights  
+- AI-powered agricultural chatbot using retrieval-augmented generation  
+- Containerized deployment using Docker and Docker Compose  
+- User-friendly web interface suitable for non-technical users  
 
-### `npm test`
+## Technology Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Frontend  
+- React.js  
 
-### `npm run build`
+Backend  
+- Python  
+- FastAPI  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Machine Learning  
+- Convolutional Neural Networks (CNN)  
+- Pretrained deep learning models for image classification  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Chatbot  
+- Retrieval-Augmented Generation (RAG)  
+- Vector database for document retrieval  
+- Large Language Model for response generation  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Deployment  
+- Docker  
+- Docker Compose  
 
-### `npm run eject`
+## System Architecture
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The application follows a microservice-based architecture. The frontend provides the user interface for image uploads and chatbot interaction. The backend handles API requests, image preprocessing, and model inference. The disease detection module classifies uploaded rice leaf images, while the chatbot module retrieves relevant agricultural documents and generates accurate responses. Docker Compose orchestrates all services for seamless deployment.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Setup and Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Prerequisites  
+- Git  
+- Docker  
+- Docker Compose  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project Structure
 
-## Learn More
+AGRITECH/
+│
+├── backend/
+│ ├── main.py
+│ ├── requirements.txt
+│ ├── dockerfile
+│ └── research_papers/
+│
+├── frontend/
+│ ├── package.json
+│ └── src/
+│
+├── docker-compose.yml
+├── Dockerfile
+└── README.md
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Results and Evaluation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The disease detection model demonstrates strong classification performance across multiple rice leaf disease categories. The chatbot improves usability by providing context-aware and document-backed agricultural guidance, reducing dependency on manual expert consultation.
 
-### Analyzing the Bundle Size
+## Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Support for additional crops and diseases  
+- Mobile application integration  
+- Multilingual chatbot responses  
+- Integration with weather and soil data  
 
-### Making a Progressive Web App
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Muhammed Afhaam Ali
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository  
